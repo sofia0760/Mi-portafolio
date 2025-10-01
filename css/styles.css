@@ -1,0 +1,79 @@
+/* 
+
+
+header nav {
+    background: rgb(0, 0, 0);
+    padding: 70px;
+    
+    
+}
+.nav-link{
+    color:rgb(255, 255, 255);
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.5s ease;
+
+}
+.nav-link:hover{
+    background: linear-gradient(#90d);
+    /* background-clip: text; */
+    /* border-radius: 20px; */
+/* }
+.nav-link.active{
+    background: linear-gradient(#90d);
+    border-radius: 20px;
+}
+.navbar-brand {
+    color: #ffffff;
+}
+
+#inicioPerfil .cont-img img {
+    width: 100%;
+    position: relative;
+    left: 30px;
+    height: 800px;
+
+
+}  */
+
+
+/* ===== NAVBAR ===== */
+/* ===== NAVBAR ===== */
+header nav {
+    background: rgb(0, 0, 0);
+    padding: 20px; 
+}
+
+.nav-link {
+    color: #ffffff !important; /* siempre blanco por defecto */
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    transition: background 0.3s ease, color 0.3s ease;
+    border-radius: 20px;
+    padding: 8px 15px;
+}
+
+/* Hover */
+.nav-link:hover {
+    background-color: #8000ff; /* morado */
+    color: #fff !important; /* texto blanco */
+}
+
+/* Activo */
+.nav-link.active {
+    background-color: #8000ff; /* morado fijo */
+    color: #fff !important; /* texto blanco */
+}
+
+/* Cuando le das click (estado focus/active del navegador) */
+.nav-link:focus,
+.nav-link:active {
+    color: #fff !important;   /* blanco */
+    background-color: #8000ff !important; /* morado */
+    outline: none; /* quita el borde raro azul */
+}
+
