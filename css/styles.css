@@ -1,79 +1,187 @@
-/* 
-
-
-header nav {
-    background: rgb(0, 0, 0);
-    padding: 70px;
-    
-    
+:root {
+    --primary-color: #6c63ff;
+    --dark-bg: #121212;
+    --darker-bg: #0a0a0a;
+    --light-text: #f5f5f5;
+    --gray-text: #aaaa;
+    --border-color: #2e2e2e;
+    --transition: all .3s ease;
 }
-.nav-link{
-    color:rgb(255, 255, 255);
-    cursor: pointer;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.5s ease;
 
+/* Body */
+body {
+    background-color: var(--border-color);
+    margin: 0;
+    padding: 0;
+    color: var(--light-text);
+    font-family: Arial, Helvetica, sans-serif;
 }
-.nav-link:hover{
-    background: linear-gradient(#90d);
-    /* background-clip: text; */
-    /* border-radius: 20px; */
-/* }
-.nav-link.active{
-    background: linear-gradient(#90d);
-    border-radius: 20px;
+
+/* NAVBAR --------------------------------------------------- */
+.navbar {
+    background: #000;
+    padding: 20px;
 }
+
 .navbar-brand {
-    color: #ffffff;
-}
-
-#inicioPerfil .cont-img img {
-    width: 100%;
-    position: relative;
-    left: 30px;
-    height: 800px;
-
-
-}  */
-
-
-/* ===== NAVBAR ===== */
-/* ===== NAVBAR ===== */
-header nav {
-    background: rgb(0, 0, 0);
-    padding: 20px; 
-}
-
-.nav-link {
-    color: #ffffff !important; /* siempre blanco por defecto */
-    cursor: pointer;
-    text-decoration: none;
+    display: flex;
+    align-items: center;
     font-weight: bold;
-    font-size: 18px;
-    transition: background 0.3s ease, color 0.3s ease;
-    border-radius: 20px;
-    padding: 8px 15px;
+    color: #fff !important;
 }
 
-/* Hover */
+/* Links */
+.nav-link {
+    color: #fff !important;
+    font-weight: bold;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin: 0 12px;
+    padding: 6px 12px;
+    letter-spacing: 1.1px;
+    border-radius: 6px;
+    transition: var(--transition);
+}
+
 .nav-link:hover {
-    background-color: #8000ff; /* morado */
-    color: #fff !important; /* texto blanco */
+    color: #8000ff !important;
+    border: 2px solid #8000ff;
+    background-color: transparent;
 }
 
-/* Activo */
-.nav-link.active {
-    background-color: #8000ff; /* morado fijo */
-    color: #fff !important; /* texto blanco */
+.nav-link.active,
+.nav-link:focus {
+    color: #8000ff !important;
+    border: 2px solid #8000ff;
+    background-color: transparent;
 }
 
-/* Cuando le das click (estado focus/active del navegador) */
-.nav-link:focus,
-.nav-link:active {
-    color: #fff !important;   /* blanco */
-    background-color: #8000ff !important; /* morado */
-    outline: none; /* quita el borde raro azul */
+/* HERO ---------------------------------------------------- */
+#inicio {
+    width: 100%;
+    padding: 50px 0;
+    color: var(--light-text);
+}
+
+/* TITULO */
+.cont-info h2 {
+    font-weight: bold;
+    font-size: 28px;
+}
+
+.cont-info h2 span {
+    color: #8000ff;
+    /* Aquí sí agarra el span */
+}
+
+.cont-info p {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* BOTÓN */
+.btn-contacto {
+    background-color: #8000ff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    transition: var(--transition);
+}
+
+.btn-contacto:hover {
+    background-color: white;
+    color: #8000ff;
+    border: 4px solid #8000ff;
+}
+
+/* IMAGEN HERO */
+#inicio .cont-img img {
+    max-width: 200px;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+    border-radius: 12px;
+    border: 1px solid #8000ff;
+}
+
+/* Texto con degradado */
+.text-gradient {
+    background: linear-gradient(50deg, #bd8ced77, #c084fc);
+    /* Morado a lila */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* SECCION DE PERFIL PROFESIONAL--------------------------------- */
+section {
+  padding: 80px 0;   /* espacio interno */
+  margin-bottom: 60px; /* espacio hacia la siguiente */
+}
+#perfil .cont-info h2{
+    text-align: center;
+    
+}
+
+/* Caja de info */
+.info-box {
+    border: 2px solid #000000;
+    border-radius: 8px;
+    background-color: transparent;
+    color: #f5f5f5;
+}
+
+/* Imagen con borde */
+.img-perfil {
+    max-width: 250px;
+    height: 350px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+    border-radius: 12px;
+    border: 1px solid #8000ff;
+    border-radius: 15px;
+    width: 100%;
+    
+}
+.redes i {
+  display: inline-block;    /* que se vean en fila */
+  margin: 0 5px;           /* separación entre ellos */
+}
+
+.redes i {
+  color:#a020f0;            /* color morado */
+  font-size: 1.8rem;        /* tamaño más grande */
+  transition: color 0.3s;
+}
+
+/* Estilos personalizados para replicar el diseño de la imagen */
+.custom-card {
+    border-radius: 15px; /* Bordes más redondeados */
+    background-color: #1e1e1e !important; /* Fondo oscuro similar al de la imagen */
+    border: 1px solid #3a3a3a !important; /* Borde sutil */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+}
+
+.skill-icon {
+    color: #c084fc; /* Color morado para los íconos */
+    /* El ícono de Figma en Font Awesome puede variar, si usas uno diferente, ajústalo.
+       Para un diseño más preciso, puedes usar las SVGs originales. */
+}
+
+.skill-star {
+    color: #c084fc; /* Color morado para las estrellas llenas */
+}
+
+.skill-star-empty {
+    color: #5a5a5a; /* Color más oscuro o grisáceo para las estrellas vacías */
+}
+
+/* Para asegurar que los íconos de Font Awesome funcionen bien */
+.fa-2x {
+    width: 32px; /* Establece un ancho fijo para alinear mejor el texto */
+    text-align: center;
 }
 
