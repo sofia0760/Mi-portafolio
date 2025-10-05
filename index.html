@@ -1,211 +1,365 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MI PORTAFOLIO</title>
-    <!-- cdn de boostrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <!-- cdn libreria de iconos de boostrap -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-    <!-- cdn propio -->
-    <link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MI PORTAFOLIO</title>
+  
+  <!-- Bootstrap CSS -->
+  <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css"
+      rel="stylesheet"
+  />
+  
+  <!-- Bootstrap Icons -->
+  <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css"
+      rel="stylesheet"
+  />
+  
+  <!-- Estilos propios -->
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
-
 <body>
-    <header>
-        <!-- Siempre se va a copiar esta barra de navegación SIEMPRE -->
+<!-- HEADER / NAVBAR -->
+<header>
+  <nav class="navbar navbar-expand-lg navbar-dark py-3 fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#inicio">
+        <img src="img/Group 2.png" alt="logo" width="100" height="30" />
+      </a>
+      <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav align-items-center gap-3">
+          <li class="nav-item"><a class="nav-link" href="#inicio">INICIO</a></li>
+          <li class="nav-item"><a class="nav-link" href="#perfil">PERFIL</a></li>
+          <li class="nav-item"><a class="nav-link" href="#habilidades">HABILIDADES</a></li>
+          <li class="nav-item"><a class="nav-link" href="#proyectos">PROYECTOS</a></li>
+          <li class="nav-item"><a class="nav-link" href="#estudios">ESTUDIOS</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experiencias">EXPERIENCIAS</a></li>
+          <li class="nav-item"><a class="nav-link" href="#hobbies">HOBBIES</a></li>
+          <li class="nav-item"><a class="nav-link" href="#redes">REDES</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
 
-        <nav class="navbar navbar-expand-lg bg-tranparente">
-            <div class="container logo">
-                <a class="navbar-brand" href="#"></a>
-                <img src="img/Group 2.png" alt="logo" width="100" height="30">
-                <!-- Boton para el responsive  -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+<!-- HERO / INICIO -->
+<section id="inicio" class="hero-section">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-8 cont-info">
+        <h2>
+          <span class="text-gradient">¡HO</span>LA!<br />
+          <span class="text-gradient">SOY</span> SOFIA CAMELO
+        </h2>
+        <p class="mt-3">
+          Desarrolladora de software en formación, apasionada por la tecnología y el diseño.
+        </p>
+        <p>
+          Este portafolio refleja mi proceso de aprendizaje, mis habilidades técnicas y blandas, y algunos proyectos
+          con enfoque en experiencia de usuario.
+        </p>
+        <button class="btn-contacto mt-3">Contáctame</button>
+      </div>
+      
+      <div class="col-md-4 cont-img text-center">
+        <img src="img/profesional.png" alt="Imagen profesional" />
+      </div>
+    </div>
+  </div>
+</section>
 
-                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                    <ul class="navbar-nav">
+<!-- PERFIL -->
+<section id="perfil">
+  <div class="container">
+    <h2 class="text-center mb-5 text-gradient">PERFIL PROFESIONAL</h2>
+    <div class="row align-items-center">
+      <div class="col-md-8 cont-info">
+        <p>
+          He desarrollado proyectos web aplicando HTML, CSS, JavaScript y Figma, enfocados en diseño,
+          lógica y estructura. Estas experiencias me han permitido fortalecer mi capacidad para resolver problemas,
+          trabajar de forma organizada y aprender de manera autónoma.
+        </p>
+        <p>
+          Mi objetivo es seguir creciendo en el desarrollo web y aportar soluciones funcionales y bien diseñadas que
+          generen valor real a los usuarios.
+        </p>
+        
+        <div class="info-box mt-4 p-3">
+          <p><strong>NOMBRES:</strong> Ana Sofia</p>
+          <p><strong>APELLIDOS:</strong> Camelo Jimenez</p>
+          <p><strong>TELÉFONO:</strong> 3202146578</p>
+        </div>
+      </div>
+      <div class="col-md-4 text-center">
+        <img src="img/yo.png" alt="Foto mia" class="img-fluid img-perfil" />
+      </div>
+    </div>
+  </div>
+</section>
 
-                        <li class="nav-item">
-                            <a class="nav-link " href="#index.html">INICIO</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link " href="#perfil">PERFIL</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#materials">HABILIDADES</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#reviews">ESTUDIOS</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#reviews">EXPERIENCIAS</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#reviews">HOBIES</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#reviews">REDES</a>
-                        </li>
-
-                    </ul>
-        </nav>
-
-    </header>
-
-    <hero>
-        <section id="inicio">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 cont-info">
-                        <h2><span class="text-gradient">¡HO</span>LA! <br><span class="text-gradient">SOY </span> SOFIA
-                            CAMELO</h2>
-                        <P class="mt-3">Desarrolladora de software en formación, apasionada por la tecnología y el
-                            diseño.</P>
-                        <p>Este portafolio refleja mi proceso de aprendizaje, mis habilidades técnicas y blandas, y
-                            algunos de los proyectos que he desarrollado con enfoque en la experiencia del usuario.</p>
-                        <p> Aquí encontrarás una muestra auténtica de mi compromiso con el crecimiento profesional y la
-                            creación de soluciones digitales con propósito.</p>
-                        <div class="d-flex align-items-center gap-4 mt-4">
-                            <button class="btn-contacto">Contáctame</button>
-
-
-                        </div>
-                    </div>
-                    <div class="col-md-4 cont-img">
-                        <img src="img/profesional.png" alt="imagen mia">
-                    </div>
-                </div>
+<!-- HABILIDADES -->
+  <div class="container text-center">
+    <h2 class="text-gradient mb-5">Habilidades</h2>
+    <div class="row justify-content-center">
+      
+      <!-- HABILIDADES TÉCNICAS -->
+      <div class="col-md-5 mb-4">
+        <div class="card custom-card p-4">
+          <h4 class="text-white mb-4">Técnicas</h4>
+          <div class="skill-item d-flex align-items-center justify-content-between mb-3">
+            <div class="d-flex align-items-center gap-3">
+              <i class="bi bi-filetype-html skill-icon"></i>
+              <span>HTML</span>
             </div>
-        </section>
-    </hero>
-    <main>
-        <section id="perfil">
-            <div class="container">
-                <div class="row align-items-center">
+            <div class="stars" data-level="5"></div>
+          </div>
 
-                    <div class="col-md-8 cont-info">
-                        <h2 class="mb-5 ">
-                            <span class="text-gradient">PERFIL PROF</span>ESIONAL
-                        </h2>
-                        <p> He desarrollado proyectos web aplicando HTML, CSS, JavaScript y Figma, enfocados en diseño,
-                            lógica y estructura.
-                            Estas experiencias me han permitido fortalecer mi capacidad para resolver problemas,
-                            trabajar de forma organizada
-                            y aprender de manera autónoma.
-                            <br><br>
-                            Mi objetivo es seguir creciendo en el desarrollo web y aportar soluciones funcionales y bien
-                            diseñadas que
-                            generen valor real a los usuarios.
-                        </p>
-
-                        <!-- caja de informacion personal -->
-                        <div class="info-box mt-6 p-3">
-                            <p><strong>NOMBRES:</strong> Ana Sofia</p>
-                            <p><strong>APELLIDOS:</strong> Camelo Jimenez</p>
-                            <p><strong>TELÉFONO:</strong> 3202146578</p>
-                            <p class="redes"><strong>REDES: </strong>
-                                <a href="https://www.linkedin.com/in/ana-sofia-camelo-jimenez-b358912b7/"
-                                    target="_blank">
-                                    <i class="bi bi-linkedin"></i></a>
-                                <a href="https://github.com/sofia0760">
-                                    <i class="bi bi-github"></i></a>
-                                <a href="https://web.whatsapp.com/">
-                                    <i class="bi bi-whatsapp"></i></a>
-                                <a href="https://workspace.google.com/intl/es-419/gmail/">
-                                    <i class="bi bi-envelope"></i></a>
-                                <a href="https://www.instagram.com/">
-                                    <i class="bi bi-instagram"></i></a>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-md-4 text-center cont-img">
-                        <img src="img/yo.png" alt="Foto mia" class="img-fluid img-perfil">
-                    </div>
-                </div>
+          <div class="skill-item d-flex align-items-center justify-content-between mb-3">
+            <div class="d-flex align-items-center gap-3">
+              <i class="bi bi-filetype-css skill-icon"></i>
+              <span>CSS</span>
             </div>
+            <div class="stars" data-level="4"></div>
+          </div>
 
-
-
-        </section>
-
-        <section id="habilidades">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <h3>TÉCNICAS</h3>
-                        <p>html</p>
-                        <p>JavaScript</p>
-                        <p>Css</p>
-                        <p>Figma</p>
-
-                    </div>
-                    <div class="col-md-6">
-                        <h3>BLANDAS</h3>
-                        <p>Comunicación</p>
-                        <p>Adaptabilidad</p>
-                        <p>Resolución de problemas</p>
-                        <p>Trabajo en equipo</p>
-
-                    </div>
-                </div>
+          <div class="skill-item d-flex align-items-center justify-content-between mb-3">
+            <div class="d-flex align-items-center gap-3">
+              <i class="bi bi-filetype-js skill-icon"></i>
+              <span>JavaScript</span>
             </div>
-        </section>
+            <div class="stars" data-level="3"></div>
+          </div>
 
-
-        <section id="mis-proyectos">
-            <div id="carouselExampleIndicators" class="carousel slide">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                        class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                        aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                        aria-label="Slide 3"></button>
-                </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="" class="d-block w-100" alt="" >
-                    </div>
-                    <div class="carousel-item">
-                        <img src="..." class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="..." class="d-block w-100" alt="...">
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
+          <div class="skill-item d-flex align-items-center justify-content-between">
+            <div class="d-flex align-items-center gap-3">
+              <i class="bi bi-brush skill-icon"></i>
+              <span>Figma</span>
             </div>
-        </section>
-    </main>
+            <div class="stars" data-level="4"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- HABILIDADES BLANDAS -->
+      <div class="col-md-5 mb-4">
+        <div class="card custom-card p-4">
+          <h4 class="text-white mb-4">Blandas</h4>
+          <div class="skill-item d-flex align-items-center justify-content-between mb-3">
+            <div class="d-flex align-items-center gap-3">
+              <i class="bi bi-chat-dots skill-icon"></i>
+              <span>Comunicación</span>
+            </div>
+            <div class="stars" data-level="5"></div>
+          </div>
+
+          <div class="skill-item d-flex align-items-center justify-content-between mb-3">
+            <div class="d-flex align-items-center gap-3">
+              <i class="bi bi-arrow-repeat skill-icon"></i>
+              <span>Adaptabilidad</span>
+            </div>
+            <div class="stars" data-level="4"></div>
+          </div>
+
+          <div class="skill-item d-flex align-items-center justify-content-between mb-3">
+            <div class="d-flex align-items-center gap-3">
+              <i class="bi bi-person-gear skill-icon"></i>
+              <span>Resolución de problemas</span>
+            </div>
+            <div class="stars" data-level="5"></div>
+          </div>
+
+          <div class="skill-item d-flex align-items-center justify-content-between">
+            <div class="d-flex align-items-center gap-3">
+              <i class="bi bi-people skill-icon"></i>
+              <span>Trabajo en equipo</span>
+            </div>
+            <div class="stars" data-level="4"></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="proyectos" class="proyectos-section">
+  <div class="container text-center">
+    <h2 class="text-gradient mb-5">Mis proyectos</h2>
+
+    <div id="carouselProyectos" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+
+        <!-- Proyecto 1 -->
+        <div class="carousel-item active">
+          <div class="row justify-content-center">
+            <div class="col-md-4">
+              <div class="card proyecto-card">
+                <img src="img/proyecto1.jpg" class="card-img-top" alt="Huellitas de Amor">
+                <div class="card-body">
+                  <h5 class="card-title">Huellitas de Amor</h5>
+                  <p class="card-text">
+                    Sitio web para adopción de mascotas, enfocado en generar amor y cuidado por los animales.<br>
+                    <strong>Tecnologías:</strong> HTML - CSS
+                  </p>
+                  <a href="#" class="ver-mas">Ver más</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Proyecto 2 -->
+        <div class="carousel-item">
+          <div class="row justify-content-center">
+            <div class="col-md-4">
+              <div class="card proyecto-card active-card">
+                <img src="img/proyecto2.jpg" class="card-img-top" alt="Algoritmos con JavaScript">
+                <div class="card-body">
+                  <h5 class="card-title">Algoritmos con JavaScript</h5>
+                  <p class="card-text">
+                    Página educativa con ejemplos y ejercicios básicos de programación en JavaScript.<br>
+                    <strong>Tecnologías:</strong> HTML - CSS - JavaScript
+                  </p>
+                  <a href="#" class="ver-mas">Ver más</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Proyecto 3 -->
+        <div class="carousel-item">
+          <div class="row justify-content-center">
+            <div class="col-md-4">
+              <div class="card proyecto-card">
+                <img src="img/proyecto3.jpg" class="card-img-top" alt="Fitness Web">
+                <div class="card-body">
+                  <h5 class="card-title">Fitness Web</h5>
+                  <p class="card-text">
+                    Página informativa para un centro de entrenamiento fitness, con diseño moderno y adaptable.<br>
+                    <strong>Tecnologías:</strong> HTML - CSS - JavaScript
+                  </p>
+                  <a href="#" class="ver-mas">Ver más</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+          <div class="carousel-item active">
+          <div class="row justify-content-center">
+            <div class="col-md-4">
+              <div class="card proyecto-card">
+                <img src="img/proyecto1.jpg" class="card-img-top" alt="Huellitas de Amor">
+                <div class="card-body">
+                  <h5 class="card-title">Huellitas de Amor</h5>
+                  <p class="card-text">
+                    Sitio web para adopción de mascotas, enfocado en generar amor y cuidado por los animales.<br>
+                    <strong>Tecnologías:</strong> HTML - CSS
+                  </p>
+                  <a href="#" class="ver-mas">Ver más</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Controles del carousel -->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselProyectos" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#carouselProyectos" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#carouselProyectos" data-bs-slide-to="2"></button>
+        <button type="button" data-bs-target="#carouselProyectos" data-bs-slide-to="2"></button>
+
+      </div>
+    </div>
+  </div>
+</section>
 
 
+<!-- SECCIONES VACÍAS PARA FUTURO -->
+<section id="estudios" class="estudios-section">
+  <div class="container">
+    <h2 class="text-gradient text-center mb-5">Estudios</h2>
 
+    <div class="row align-items-center justify-content-center">
+      <!-- Columna izquierda -->
+      <div class="col-md-5 text-end">
+        <div class="card estudio-card left-card">
+          <div class="card-body">
+            <i class="bi bi-person-workspace icono-estudio"></i>
+            <p>
+              Actualmente curso el <strong>Tecnólogo en Análisis y Desarrollo de Software</strong> en el <strong>SENA</strong>, 
+              donde me estoy formando en programación, bases de datos, desarrollo web y lógica computacional.
+            </p>
+            <div class="iconos-extra mt-2">
+              <i class="bi bi-laptop"></i>
+              <i class="bi bi-database"></i>
+              <i class="bi bi-file-earmark-code"></i>
+            </div>
+          </div>
+        </div>
+      </div>
 
+      <!-- Columna central (línea vertical decorativa) -->
+      <div class="col-md-1 text-center d-none d-md-block">
+        <div class="linea-gradiente"></div>
+      </div>
 
+      <!-- Columna derecha -->
+      <div class="col-md-5 text-start">
+        <div class="card estudio-card right-card mb-4">
+          <div class="card-body">
+            <img src="img/escudo.png" alt="Escudo colegio" class="escudo">
+            <p>
+              <strong>Bachiller Académico</strong> en <strong>I.E.D REFRA</strong>.  
+              Educación secundaria completa con énfasis en competencias generales, disciplina académica y preparación para estudios técnicos.
+            </p>
+            <div class="iconos-extra mt-2">
+              <i class="bi bi-mortarboard"></i>
+              <i class="bi bi-journal-bookmark"></i>
+            </div>
+          </div>
+        </div>
 
+        <div class="card estudio-card right-card">
+          <div class="card-body">
+            <img src="img/escudo.png" alt="Escudo colegio" class="escudo">
+            <p>
+              <strong>Técnico en sistemas</strong> en <strong>I.E.D REFRA</strong>.  
+              Conocimientos en mantenimiento de equipos, redes básicas, instalación de software y soporte técnico.
+            </p>
+            <div class="iconos-extra mt-2">
+              <i class="bi bi-wrench"></i>
+              <i class="bi bi-pc-display"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="experiencias"><div class="container"><h2 class="text-center text-gradient">EXPERIENCIAS</h2></div></section>
+<section id="hobbies"><div class="container"><h2 class="text-center text-gradient">HOBBIES</h2></div></section>
+<section id="redes"><div class="container"><h2 class="text-center text-gradient">REDES</h2></div></section>
 
-    <!-- cdn de Boostrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script>
-    <!-- cdn propio -->
-    <script src="js/main.js"></script>
+<!-- Bootstrap JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+
+<!-- JS propio -->
+<script src="js/main.js"></script>
 </body>
-
 </html>

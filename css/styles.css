@@ -1,187 +1,280 @@
 :root {
-    --primary-color: #6c63ff;
-    --dark-bg: #121212;
-    --darker-bg: #0a0a0a;
+    --primary-color: #8000ff;
     --light-text: #f5f5f5;
-    --gray-text: #aaaa;
-    --border-color: #2e2e2e;
-    --transition: all .3s ease;
+    --transition: all 0.3s ease;
 }
 
-/* Body */
+/* GENERAL */
 body {
-    background-color: var(--border-color);
-    margin: 0;
-    padding: 0;
+    background-color: #1e1e1e;
     color: var(--light-text);
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Poppins", Arial, sans-serif;
+    padding-top: 80px; /* para no tapar el contenido por el navbar */
 }
 
-/* NAVBAR --------------------------------------------------- */
+/* NAVBAR */
 .navbar {
-    background: #000;
-    padding: 20px;
+    transition: background-color 0.4s ease, box-shadow 0.4s ease;
+    background-color: transparent !important;
 }
 
-.navbar-brand {
-    display: flex;
-    align-items: center;
-    font-weight: bold;
-    color: #fff !important;
+.navbar.scrolled {
+    background-color: #000 !important;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
 }
 
-/* Links */
-.nav-link {
-    color: #fff !important;
-    font-weight: bold;
-    font-size: 12px;
+.navbar-nav .nav-link {
+    color: white !important;
+    font-weight: 600;
     text-transform: uppercase;
-    margin: 0 12px;
-    padding: 6px 12px;
-    letter-spacing: 1.1px;
-    border-radius: 6px;
     transition: var(--transition);
 }
 
-.nav-link:hover {
-    color: #8000ff !important;
-    border: 2px solid #8000ff;
-    background-color: transparent;
+.navbar-nav .nav-link:hover {
+    color: var(--primary-color) !important;
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 3px;
 }
 
-.nav-link.active,
-.nav-link:focus {
-    color: #8000ff !important;
-    border: 2px solid #8000ff;
-    background-color: transparent;
+/* HERO */
+.hero-section {
+    padding: 120px 0 80px;
 }
 
-/* HERO ---------------------------------------------------- */
-#inicio {
-    width: 100%;
-    padding: 50px 0;
-    color: var(--light-text);
-}
-
-/* TITULO */
 .cont-info h2 {
+    font-size: 32px;
     font-weight: bold;
-    font-size: 28px;
 }
 
-.cont-info h2 span {
-    color: #8000ff;
-    /* Aquí sí agarra el span */
+.text-gradient {
+    background: linear-gradient(50deg, #bd8ced, #c084fc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-.cont-info p {
-    font-size: 14px;
-    margin-top: 10px;
-}
-
-/* BOTÓN */
 .btn-contacto {
-    background-color: #8000ff;
+    background-color: var(--primary-color);
     color: white;
-    padding: 10px 20px;
     border: none;
     border-radius: 10px;
+    padding: 10px 20px;
     transition: var(--transition);
 }
 
 .btn-contacto:hover {
     background-color: white;
-    color: #8000ff;
-    border: 4px solid #8000ff;
+    color: var(--primary-color);
+    border: 3px solid var(--primary-color);
 }
 
 /* IMAGEN HERO */
-#inicio .cont-img img {
-    max-width: 200px;
-    height: auto;
-    object-fit: cover;
-    display: block;
-    margin: 0 auto;
+.cont-img img {
+    max-width: 220px;
     border-radius: 12px;
-    border: 1px solid #8000ff;
+    border: 2px solid var(--primary-color);
 }
 
-/* Texto con degradado */
-.text-gradient {
-    background: linear-gradient(50deg, #bd8ced77, #c084fc);
-    /* Morado a lila */
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-}
-
-/* SECCION DE PERFIL PROFESIONAL--------------------------------- */
+/* SECCIONES */
 section {
-  padding: 80px 0;   /* espacio interno */
-  margin-bottom: 60px; /* espacio hacia la siguiente */
-}
-#perfil .cont-info h2{
-    text-align: center;
-    
+    padding: 80px 0;
+    border-bottom: 1px solid #333;
 }
 
-/* Caja de info */
 .info-box {
-    border: 2px solid #000000;
-    border-radius: 8px;
-    background-color: transparent;
-    color: #f5f5f5;
+    border: 2px solid #444;
+    border-radius: 10px;
 }
 
-/* Imagen con borde */
+/* PERFIL IMAGEN */
 .img-perfil {
-    max-width: 250px;
-    height: 350px;
-    object-fit: cover;
-    display: block;
-    margin: 0 auto;
-    border-radius: 12px;
-    border: 1px solid #8000ff;
     border-radius: 15px;
-    width: 100%;
-    
-}
-.redes i {
-  display: inline-block;    /* que se vean en fila */
-  margin: 0 5px;           /* separación entre ellos */
+    border: 2px solid var(--primary-color);
+    max-height: 350px;
 }
 
-.redes i {
-  color:#a020f0;            /* color morado */
-  font-size: 1.8rem;        /* tamaño más grande */
-  transition: color 0.3s;
+/* ===========================
+   HABILIDADES SECTION
+=========================== */
+.habilidades-section {
+    background-color: #1e1e1e;
+    padding: 80px 0;
 }
 
-/* Estilos personalizados para replicar el diseño de la imagen */
 .custom-card {
-    border-radius: 15px; /* Bordes más redondeados */
-    background-color: #1e1e1e !important; /* Fondo oscuro similar al de la imagen */
-    border: 1px solid #3a3a3a !important; /* Borde sutil */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    background-color: #2b2b2b;
+    border-radius: 15px;
+    border: 1px solid #3a3a3a;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    color: white;
+    text-align: left;
+}
+
+.skill-item {
+    font-size: 1rem;
+    border-bottom: 1px solid #3a3a3a;
+    padding-bottom: 8px;
+}
+
+.skill-item:last-child {
+    border-bottom: none;
 }
 
 .skill-icon {
-    color: #c084fc; /* Color morado para los íconos */
-    /* El ícono de Figma en Font Awesome puede variar, si usas uno diferente, ajústalo.
-       Para un diseño más preciso, puedes usar las SVGs originales. */
+    font-size: 1.8rem;
+    color: #c084fc;
+    /* morado */
 }
 
-.skill-star {
-    color: #c084fc; /* Color morado para las estrellas llenas */
+.stars {
+    display: flex;
+    gap: 3px;
 }
 
-.skill-star-empty {
-    color: #5a5a5a; /* Color más oscuro o grisáceo para las estrellas vacías */
+.stars i {
+    color: #4a0066;
+    /* estrellas vacías */
+    transition: color 0.3s;
 }
 
-/* Para asegurar que los íconos de Font Awesome funcionen bien */
-.fa-2x {
-    width: 32px; /* Establece un ancho fijo para alinear mejor el texto */
-    text-align: center;
+.stars i.active {
+    color: #c084fc;
+    /* estrellas llenas */
 }
 
+/* Título general */
+.habilidades-section h2 {
+    font-weight: bold;
+}
+
+/* ===========================
+   PROYECTOS SECTION
+=========================== */
+.proyectos-section {
+    background-color: #1e1e1e;
+    padding: 80px 0;
+}
+
+.proyecto-card {
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #333;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: all 0.4s ease;
+}
+
+.proyecto-card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.proyecto-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 20px rgba(192, 132, 252, 0.6);
+}
+
+.proyecto-card .card-body {
+    background-color: #000;
+}
+
+.proyecto-card .card-title {
+    color: #fff;
+    font-weight: 600;
+}
+
+.proyecto-card .card-text {
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+.ver-mas {
+    color: #c084fc;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.ver-mas:hover {
+    color: #9b5de5;
+}
+
+.carousel-indicators [data-bs-target] {
+    background-color: #c084fc;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.carousel-indicators {
+    bottom: -40px;
+}
+
+/* Título */
+.proyectos-section h2 {
+    font-weight: bold;
+}
+
+.active-card {
+    box-shadow: 0 0 25px rgba(192, 132, 252, 0.8);
+}
+
+/* ===========================
+   ESTUDIOS SECTION
+=========================== */
+.estudios-section {
+    background-color: #1e1e1e;
+    color: #fff;
+    padding: 80px 0;
+    position: relative;
+}
+
+.estudio-card {
+    background-color: transparent;
+    border: 1px solid #8000ff;
+    border-radius: 12px;
+    color: #f5f5f5;
+    padding: 20px;
+    transition: all 0.4s ease;
+    box-shadow: 0 0 10px rgba(128, 0, 255, 0.3);
+}
+
+.estudio-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 20px rgba(192, 132, 252, 0.6);
+}
+
+.icono-estudio {
+    font-size: 2rem;
+    color: #a020f0;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.iconos-extra i {
+    font-size: 1.2rem;
+    color: #c084fc;
+    margin-right: 10px;
+}
+
+/* Línea vertical */
+.linea-gradiente {
+    width: 4px;
+    height: 250px;
+    margin: 0 auto;
+    background: linear-gradient(180deg, #c084fc, #8000ff);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(192, 132, 252, 0.8);
+}
+
+/* Escudo */
+.escudo {
+    width: 40px;
+    height: auto;
+    float: right;
+    margin-left: 10px;
+}
+
+/* Título */
+.estudios-section h2 {
+    font-weight: bold;
+}
