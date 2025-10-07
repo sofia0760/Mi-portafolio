@@ -1,118 +1,122 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>MI PORTAFOLIO</title>
-  
+
   <!-- Bootstrap CSS -->
-  <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css"
-      rel="stylesheet"
-  />
-  
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet" />
+
   <!-- Bootstrap Icons -->
-  <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css"
-      rel="stylesheet"
-  />
-  
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css"
+    rel="stylesheet" />
+
+  <!-- iconos awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Animaciones de AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- Slick CSS desde CDN -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+
+
   <!-- Estilos propios -->
   <link rel="stylesheet" href="css/styles.css" />
 </head>
+
 <body>
-<!-- HEADER / NAVBAR -->
-<header>
-  <nav class="navbar navbar-expand-lg navbar-dark py-3 fixed-top">
-    <div class="container">
-      <a class="navbar-brand" href="#inicio">
-        <img src="img/Group 2.png" alt="logo" width="100" height="30" />
-      </a>
-      <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      
-      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-        <ul class="navbar-nav align-items-center gap-3">
-          <li class="nav-item"><a class="nav-link" href="#inicio">INICIO</a></li>
-          <li class="nav-item"><a class="nav-link" href="#perfil">PERFIL</a></li>
-          <li class="nav-item"><a class="nav-link" href="#habilidades">HABILIDADES</a></li>
-          <li class="nav-item"><a class="nav-link" href="#proyectos">PROYECTOS</a></li>
-          <li class="nav-item"><a class="nav-link" href="#estudios">ESTUDIOS</a></li>
-          <li class="nav-item"><a class="nav-link" href="#experiencias">EXPERIENCIAS</a></li>
-          <li class="nav-item"><a class="nav-link" href="#hobbies">HOBBIES</a></li>
-          <li class="nav-item"><a class="nav-link" href="#redes">REDES</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-</header>
+  <!-- HEADER / NAVBAR -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark py-3 fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#inicio">
+          <img src="img/Group 2.png" alt="logo" width="100" height="30" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-<!-- HERO / INICIO -->
-<section id="inicio" class="hero-section">
-  <div class="container">
-    <div class="row align-items-center">
-      <div class="col-md-8 cont-info">
-        <h2>
-          <span class="text-gradient">¡HO</span>LA!<br />
-          <span class="text-gradient">SOY</span> SOFIA CAMELO
-        </h2>
-        <p class="mt-3">
-          Desarrolladora de software en formación, apasionada por la tecnología y el diseño.
-        </p>
-        <p>
-          Este portafolio refleja mi proceso de aprendizaje, mis habilidades técnicas y blandas, y algunos proyectos
-          con enfoque en experiencia de usuario.
-        </p>
-        <button class="btn-contacto mt-3">Contáctame</button>
-      </div>
-      
-      <div class="col-md-4 cont-img text-center">
-        <img src="img/profesional.png" alt="Imagen profesional" />
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- PERFIL -->
-<section id="perfil">
-  <div class="container">
-    <h2 class="text-center mb-5 text-gradient">PERFIL PROFESIONAL</h2>
-    <div class="row align-items-center">
-      <div class="col-md-8 cont-info">
-        <p>
-          He desarrollado proyectos web aplicando HTML, CSS, JavaScript y Figma, enfocados en diseño,
-          lógica y estructura. Estas experiencias me han permitido fortalecer mi capacidad para resolver problemas,
-          trabajar de forma organizada y aprender de manera autónoma.
-        </p>
-        <p>
-          Mi objetivo es seguir creciendo en el desarrollo web y aportar soluciones funcionales y bien diseñadas que
-          generen valor real a los usuarios.
-        </p>
-        
-        <div class="info-box mt-4 p-3">
-          <p><strong>NOMBRES:</strong> Ana Sofia</p>
-          <p><strong>APELLIDOS:</strong> Camelo Jimenez</p>
-          <p><strong>TELÉFONO:</strong> 3202146578</p>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav align-items-center gap-3">
+            <li class="nav-item"><a class="nav-link" href="#inicio">INICIO</a></li>
+            <li class="nav-item"><a class="nav-link" href="#perfil">PERFIL</a></li>
+            <li class="nav-item"><a class="nav-link" href="#habilidades">HABILIDADES</a></li>
+            <li class="nav-item"><a class="nav-link" href="#proyectos">PROYECTOS</a></li>
+            <li class="nav-item"><a class="nav-link" href="#estudios">ESTUDIOS</a></li>
+            <li class="nav-item"><a class="nav-link" href="#experiencias">EXPERIENCIAS</a></li>
+            <li class="nav-item"><a class="nav-link" href="#hobies">HOBBIES</a></li>
+            <li class="nav-item"><a class="nav-link" href="#redes">REDES</a></li>
+          </ul>
         </div>
       </div>
-      <div class="col-md-4 text-center">
-        <img src="img/yo.png" alt="Foto mia" class="img-fluid img-perfil" />
+    </nav>
+  </header>
+
+  <!-- HERO / INICIO -->
+  <section id="inicio" class="hero-section">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-12 col-md-8 cont-info">
+          <h2>
+            <span class="text-gradient">¡HO</span>LA!<br />
+            <span class="text-gradient">SOY</span> SOFIA CAMELO
+          </h2>
+          <p class="mt-3">
+            Desarrolladora de software en formación, apasionada por la tecnología y el diseño.
+          </p>
+          <p>
+            Este portafolio refleja mi proceso de aprendizaje, mis habilidades técnicas y blandas, y algunos proyectos
+            con enfoque en experiencia de usuario.
+          </p>
+          <button class="btn-contacto mt-3">Contáctame</button>
+        </div>
+
+        <div class=" col-12 col-md-4 cont-img text-center" data-aos="fade-left">
+          <img src="img/profesional.png" alt="Imagen profesional">
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- HABILIDADES -->
-  <div class="container text-center">
+  <!-- PERFIL -->
+  <section id="perfil" data-aos="fade-up">
+    <div class="container">
+      <h2 class="text-center mb-5 text-gradient">PERFIL PROFESIONAL</h2>
+      <div class="row align-items-center">
+        <div class="col-md-8 cont-info">
+          <p>
+            He desarrollado proyectos web aplicando HTML, CSS, JavaScript y Figma, enfocados en diseño,
+            lógica y estructura. Estas experiencias me han permitido fortalecer mi capacidad para resolver problemas,
+            trabajar de forma organizada y aprender de manera autónoma.
+          </p>
+          <p>
+            Mi objetivo es seguir creciendo en el desarrollo web y aportar soluciones funcionales y bien diseñadas que
+            generen valor real a los usuarios.
+          </p>
+
+          <div class="info-box mt-4 p-3">
+            <p><strong>NOMBRES:</strong> Ana Sofia</p>
+            <p><strong>APELLIDOS:</strong> Camelo Jimenez</p>
+            <p><strong>TELÉFONO:</strong> 3202146578</p>
+          </div>
+        </div>
+        <div class="col-md-4 text-center">
+          <img src="img/yo.png" alt="Foto mia" class="img-fluid img-perfil" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HABILIDADES -->
+  <div id="habilidades" class="container text-center">
     <h2 class="text-gradient mb-5">Habilidades</h2>
     <div class="row justify-content-center">
-      
+
       <!-- HABILIDADES TÉCNICAS -->
       <div class="col-md-5 mb-4">
         <div class="card custom-card p-4">
@@ -191,175 +195,390 @@
 
     </div>
   </div>
-</section>
+  </section>
 
-<section id="proyectos" class="proyectos-section">
-  <div class="container text-center">
-    <h2 class="text-gradient mb-5">Mis proyectos</h2>
+  <!-- carrusel de proyectos -->
+  <section id="proyectos">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-proyectos">
+          <h2>Mis proyectos</h2>
 
-    <div id="carouselProyectos" class="carousel slide" data-bs-ride="carousel">
+          <div class="slider_proyectos">
+
+            <!-- tarjeta 1  -->
+            <div class="card-proyectos">
+              <div class="cont-img">
+                <img src="img/fundacion.png" alt="foto fundacion">
+              </div>
+              <div class="cont-info">
+                <h5 class="card-title">Huellitas de Amor</h5>
+                <p class="card-text">
+                  Sitio web para adopción de mascotas, enfocado en generar amor y cuidado por los animales.<br>
+                  <strong>Tecnologías:</strong> HTML - CSS
+                </p>
+                <a href="https://sofia0760.github.io/fundaci-n-mascotas-/" target="_blank" class="ver-mas">Ver más</a>
+              </div>
+            </div>
+
+            <!-- tarjeta 2 -->
+            <div class="card-proyectos">
+              <div class="cont-img">
+                <img src="img/vehiculos.png" alt="fitness-web">
+              </div>
+              <div class="cont-info">
+                <h5 class="card-title">Driveways</h5>
+                <p class="card-text">
+                  Página web simulada a un concesionario de veehiculos<br>
+                  <strong>Tecnologías:</strong> HTML - CSS - JavaScript
+                </p>
+                <a href="https://sofia0760.github.io/web-site-responsive/" target="_blank" class="ver-mas">Ver más</a>
+              </div>
+            </div>
+
+            <!-- tarjeta 3 -->
+            <div class="card-proyectos">
+              <div class="cont-img">
+                <img src="img/javascript.png" alt="algoritmos-js">
+              </div>
+              <div class="cont-info">
+                <h5 class="card-title">Algoritmos con JavaScript</h5>
+                <p class="card-text">
+                  Página educativa con ejemplos y ejercicios básicos de programación en JavaScript.<br>
+                  <strong>Tecnologías:</strong> HTML - CSS - JavaScript
+                </p>
+                <a href="https://sofia0760.github.io/Algoritmos-intermedios/" target="_blank" class="ver-mas">Ver
+                  más</a>
+              </div>
+            </div>
+
+            <!-- tarjeta 4 -->
+            <div class="card-proyectos">
+              <div class="cont-img">
+                <img src="img/dom-figuras.png" alt="Dom-figuras">
+              </div>
+              <div class="cont-info">
+                <h5 class="card-title">Base-Figuras</h5>
+                <p class="card-text">
+                  Este sitio web fue desarrollado para practicar la manipulación del DOM.permitiendo modificar
+                  dinámicamente los elementos de la página.<br>
+                  <strong>Tecnologías:</strong> HTML - CSS - JavaScript
+                </p>
+                <a href="https://sofia0760.github.io/DOM-base-figuras/" target="_blank" class="ver-mas">Ver más</a>
+              </div>
+            </div>
+
+            <!-- tarjeta 5 -->
+            <div class="card-proyectos">
+              <div class="cont-img">
+                <img src="img/panto.png" alt="Panto">
+              </div>
+              <div class="cont-info">
+                <h5 class="card-title">Panto</h5>
+                <p class="card-text">
+                  Este sitio web sobre inmuebles<br>
+                  <strong>Tecnologías:</strong> HTML - CSS - Boostrap
+                </p>
+                <a href="https://sofia0760.github.io/sitio-web-Panto-con-Boostrap/" target="_blank" class="ver-mas">Ver
+                  más</a>
+              </div>
+            </div>
+
+
+
+
+
+
+
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+
+
+  <!-- SECCION EXPERIENCIAS -->
+  <section id="estudios" class="estudios-section">
+    <div class="container">
+      <h2 class="text-gradient text-center mb-5">Estudios</h2>
+
+      <div class="row align-items-center justify-content-center">
+        <!-- Columna izquierda -->
+        <div class="col-md-5 text-end">
+          <div class="card estudio-card left-card">
+            <div class="card-body text-center">
+              <i class="bi bi-person-workspace icono-estudio"></i>
+              <img src="img/logoSenaNaranja.png" alt="escudo sena" class="escudo">
+              <p>
+                Actualmente curso el <strong>Tecnólogo en Análisis y Desarrollo de Software</strong> en el
+                <strong>SENA</strong>,
+                donde me estoy formando en programación, bases de datos, desarrollo web y lógica computacional.
+              </p>
+              <div class="iconos-extra mt-2">
+                <i class="bi bi-laptop"></i>
+                <i class="bi bi-database"></i>
+                <i class="bi bi-file-earmark-code"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Columna central (línea vertical decorativa) -->
+        <div class="col-md-1 text-center d-none d-md-block">
+          <div class="linea-gradiente"></div>
+        </div>
+
+        <!-- Columna derecha -->
+        <div class="col-md-5 text-start">
+          <div class="card estudio-card right-card mb-4">
+            <div class="card-body">
+              <img src="img/Escudo (1).png" alt="Escudo colegio" class="escudo">
+              <p>
+                <strong>Bachiller Académico</strong> en <strong>I.E.D REFRA</strong>.
+                Educación secundaria completa con énfasis en competencias generales, disciplina académica y preparación
+                para estudios técnicos.
+              </p>
+              <div class="iconos-extra mt-2">
+                <i class="bi bi-mortarboard"></i>
+                <i class="bi bi-journal-bookmark"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="card estudio-card right-card">
+            <div class="card-body">
+              <img src="img/Escudo (1).png" alt="Escudo colegio" class="escudo">
+              <p>
+                <strong>Técnico en sistemas</strong> en <strong>I.E.D REFRA</strong>.
+                Conocimientos en mantenimiento de equipos, redes básicas, instalación de software y soporte técnico.
+              </p>
+              <div class="iconos-extra mt-2">
+                <i class="bi bi-wrench"></i>
+                <i class="bi bi-pc-display"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="experiencias" class="experiencia-section">
+    <div class="container">
+      <h2 class="text-gradient text-center mb-5">EXPERIENCIAS</h2>
+
+      <div class="row align-items-center justify-content-center">
+        <!-- Columna izquierda -->
+        <div class="col-md-5 text-end">
+          <div class="card estudio-card left-card">
+            <div class="card-body text-center">
+              <i class="bi bi-person-workspace icono-estudio"></i>
+              <p>
+                <strong>ENFOCADA EN TRABAJO EN EQUIPO</strong> <br>
+                He trabajado en proyectos colaborativos donde he aportado en el desarrollo frontend, diseño de
+                interfaces y resolución de problemas técnicos, fortaleciendo mis habilidades de comunicación y trabajo
+                en equipo.
+              </p>
+              <div class="iconos-extra mt-2">
+                <i class="bi bi-laptop"></i>
+                <i class="bi bi-database"></i>
+                <i class="bi bi-file-earmark-code"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Columna central (línea vertical decorativa) -->
+        <div class="col-md-1 text-center d-none d-md-block">
+          <div class="linea-gradiente"></div>
+        </div>
+
+        <!-- Columna derecha -->
+        <div class="col-md-5 text-start">
+          <div class="card estudio-card right-card mb-4">
+            <div class="card-body">
+
+              <p>
+                <strong> ENFOCADA EN PRÁCTICA SIMULADA</strong>. <br>
+                Durante mi formación he participado en simulaciones de entorno laboral, asumiendo el rol de
+                desarrolladora y aplicando metodologías básicas de desarrollo para entregar soluciones funcionales.
+
+              </p>
+              <div class="iconos-extra mt-2">
+                <i class="bi bi-mortarboard"></i>
+                <i class="bi bi-journal-bookmark"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="card estudio-card right-card">
+            <div class="card-body">
+
+              <p>
+                <strong>ENFOCADA EN PROYECTOS PERSONALES</strong>. <br>
+                A través de proyectos personales he puesto en práctica mis conocimientos en desarrollo web, creando
+                interfaces funcionales y mejorando progresivamente mis habilidades técnicas y creativas.
+              </p>
+              <div class="iconos-extra mt-2">
+                <i class="bi bi-wrench"></i>
+                <i class="bi bi-pc-display"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="hobies" class="text-center py-5">
+    <h2 class="titulo-hobies mb-4">Hobies</h2>
+
+    <div id="carouselHobies" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
 
-        <!-- Proyecto 1 -->
+        <!-- Voleibol -->
         <div class="carousel-item active">
-          <div class="row justify-content-center">
-            <div class="col-md-4">
-              <div class="card proyecto-card">
-                <img src="img/proyecto1.jpg" class="card-img-top" alt="Huellitas de Amor">
-                <div class="card-body">
-                  <h5 class="card-title">Huellitas de Amor</h5>
-                  <p class="card-text">
-                    Sitio web para adopción de mascotas, enfocado en generar amor y cuidado por los animales.<br>
-                    <strong>Tecnologías:</strong> HTML - CSS
-                  </p>
-                  <a href="#" class="ver-mas">Ver más</a>
-                </div>
-              </div>
+          <div class="card proyecto-card mx-auto">
+            <i class="fa-solid fa-volleyball-ball hobby-icon"></i>
+            <div class="card-body">
+              <h5 class="card-title">Jugar voleibol</h5>
+              <p>
+                El deporte me enseña trabajo en equipo, enfoque y energía para cada nuevo reto.
+              </p>
             </div>
           </div>
         </div>
 
-        <!-- Proyecto 2 -->
+        <!-- Música -->
         <div class="carousel-item">
-          <div class="row justify-content-center">
-            <div class="col-md-4">
-              <div class="card proyecto-card active-card">
-                <img src="img/proyecto2.jpg" class="card-img-top" alt="Algoritmos con JavaScript">
-                <div class="card-body">
-                  <h5 class="card-title">Algoritmos con JavaScript</h5>
-                  <p class="card-text">
-                    Página educativa con ejemplos y ejercicios básicos de programación en JavaScript.<br>
-                    <strong>Tecnologías:</strong> HTML - CSS - JavaScript
-                  </p>
-                  <a href="#" class="ver-mas">Ver más</a>
-                </div>
-              </div>
+          <div class="card proyecto-card mx-auto">
+            <i class="fa-solid fa-music hobby-icon"></i>
+            <div class="card-body">
+              <h5 class="card-title">Escuchar música</h5>
+              <p>
+                La música me inspira y me ayuda a mantener la concentración y creatividad.
+              </p>
             </div>
           </div>
         </div>
 
-        <!-- Proyecto 3 -->
+        <!-- Viajar -->
         <div class="carousel-item">
-          <div class="row justify-content-center">
-            <div class="col-md-4">
-              <div class="card proyecto-card">
-                <img src="img/proyecto3.jpg" class="card-img-top" alt="Fitness Web">
-                <div class="card-body">
-                  <h5 class="card-title">Fitness Web</h5>
-                  <p class="card-text">
-                    Página informativa para un centro de entrenamiento fitness, con diseño moderno y adaptable.<br>
-                    <strong>Tecnologías:</strong> HTML - CSS - JavaScript
-                  </p>
-                  <a href="#" class="ver-mas">Ver más</a>
-                </div>
-              </div>
+          <div class="card proyecto-card mx-auto">
+            <i class="fa-solid fa-plane hobby-icon"></i>
+            <div class="card-body">
+              <h5 class="card-title">Viajar</h5>
+              <p>
+                Viajar me ayuda a salir de la rutina, conocer pueblitos y ser más sociable.
+              </p>
             </div>
           </div>
         </div>
-
-          <div class="carousel-item active">
-          <div class="row justify-content-center">
-            <div class="col-md-4">
-              <div class="card proyecto-card">
-                <img src="img/proyecto1.jpg" class="card-img-top" alt="Huellitas de Amor">
-                <div class="card-body">
-                  <h5 class="card-title">Huellitas de Amor</h5>
-                  <p class="card-text">
-                    Sitio web para adopción de mascotas, enfocado en generar amor y cuidado por los animales.<br>
-                    <strong>Tecnologías:</strong> HTML - CSS
-                  </p>
-                  <a href="#" class="ver-mas">Ver más</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
       </div>
 
-      <!-- Controles del carousel -->
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselProyectos" data-bs-slide-to="0" class="active"></button>
-        <button type="button" data-bs-target="#carouselProyectos" data-bs-slide-to="1"></button>
-        <button type="button" data-bs-target="#carouselProyectos" data-bs-slide-to="2"></button>
-        <button type="button" data-bs-target="#carouselProyectos" data-bs-slide-to="2"></button>
+      <!-- Indicadores -->
+      <!-- <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselHobies" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#carouselHobies" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#carouselHobies" data-bs-slide-to="2"></button>
+      </div> -->
 
-      </div>
+      <!-- Controles -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselHobies" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselHobies" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
     </div>
-  </div>
-</section>
 
+  </section>
+  <!-- FOOTER -->
+  <footer id="redes" class="footer-section">
+    <div class="container">
+      <div class="row">
+        <!-- Información Personal -->
+        <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up">
+          <h4 class="text-gradient mb-3">Sofia Camelo</h4>
+          <p class="footer-text">
+            Desarrolladora de software en formación, apasionada por crear experiencias digitales innovadoras.
+          </p>
+          <p class="footer-text mb-1">
+            <i class="bi bi-envelope-fill me-2"></i> camelojimenezsofia20@gmail.com
+          </p>
+          <p class="footer-text">
+            <i class="bi bi-telephone-fill me-2"></i> 3202146578
+          </p>
+        </div>
 
-<!-- SECCIONES VACÍAS PARA FUTURO -->
-<section id="estudios" class="estudios-section">
-  <div class="container">
-    <h2 class="text-gradient text-center mb-5">Estudios</h2>
+        <!-- Enlaces Rápidos -->
+        <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+          <h5 class="text-gradient mb-3">Enlaces Rápidos</h5>
+          <ul class="footer-links">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#perfil">Perfil</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#estudios">Estudios</a></li>
+            <li><a href="#experiencias">Experiencias</a></li>
+            <li><a href="#hobies">Hobies</a></li>
+          </ul>
+        </div>
 
-    <div class="row align-items-center justify-content-center">
-      <!-- Columna izquierda -->
-      <div class="col-md-5 text-end">
-        <div class="card estudio-card left-card">
-          <div class="card-body">
-            <i class="bi bi-person-workspace icono-estudio"></i>
-            <p>
-              Actualmente curso el <strong>Tecnólogo en Análisis y Desarrollo de Software</strong> en el <strong>SENA</strong>, 
-              donde me estoy formando en programación, bases de datos, desarrollo web y lógica computacional.
-            </p>
-            <div class="iconos-extra mt-2">
-              <i class="bi bi-laptop"></i>
-              <i class="bi bi-database"></i>
-              <i class="bi bi-file-earmark-code"></i>
-            </div>
+        <!-- Redes Sociales -->
+        <div class="col-lg-4 col-md-12 mb-4" data-aos="fade-up" data-aos-delay="200">
+          <h5 class="text-gradient mb-3">Sígueme en</h5>
+          <div class="social-links">
+            <a href="https://www.linkedin.com/in/ana-sofia-camelo-jimenez-b358912b7/" target="_blank" class="social-icon" aria-label="LinkedIn">
+              <i class="bi bi-linkedin"></i>
+            </a>
+            <a href="https://github.com/sofia0760" target="_blank" class="social-icon" aria-label="GitHub">
+              <i class="bi bi-github"></i>
+            </a>
+           
+            
+            <a href="https://mail.google.com/mail/u/0/#inbox" class="social-icon" aria-label="Email">
+              <i class="bi bi-envelope-fill"></i>
+            </a>
           </div>
         </div>
       </div>
 
-      <!-- Columna central (línea vertical decorativa) -->
-      <div class="col-md-1 text-center d-none d-md-block">
-        <div class="linea-gradiente"></div>
-      </div>
-
-      <!-- Columna derecha -->
-      <div class="col-md-5 text-start">
-        <div class="card estudio-card right-card mb-4">
-          <div class="card-body">
-            <img src="img/escudo.png" alt="Escudo colegio" class="escudo">
-            <p>
-              <strong>Bachiller Académico</strong> en <strong>I.E.D REFRA</strong>.  
-              Educación secundaria completa con énfasis en competencias generales, disciplina académica y preparación para estudios técnicos.
-            </p>
-            <div class="iconos-extra mt-2">
-              <i class="bi bi-mortarboard"></i>
-              <i class="bi bi-journal-bookmark"></i>
-            </div>
-          </div>
-        </div>
-
-        <div class="card estudio-card right-card">
-          <div class="card-body">
-            <img src="img/escudo.png" alt="Escudo colegio" class="escudo">
-            <p>
-              <strong>Técnico en sistemas</strong> en <strong>I.E.D REFRA</strong>.  
-              Conocimientos en mantenimiento de equipos, redes básicas, instalación de software y soporte técnico.
-            </p>
-            <div class="iconos-extra mt-2">
-              <i class="bi bi-wrench"></i>
-              <i class="bi bi-pc-display"></i>
-            </div>
-          </div>
+      <!-- Copyright -->
+      <div class="row">
+        <div class="col-12 text-center mt-4 pt-4 border-top border-secondary">
+          <p class="footer-copyright mb-0">
+            &copy; 2025 Sofia Camelo. Todos los derechos reservados.
+          </p>
         </div>
       </div>
     </div>
-  </div>
-</section>
-<section id="experiencias"><div class="container"><h2 class="text-center text-gradient">EXPERIENCIAS</h2></div></section>
-<section id="hobbies"><div class="container"><h2 class="text-center text-gradient">HOBBIES</h2></div></section>
-<section id="redes"><div class="container"><h2 class="text-center text-gradient">REDES</h2></div></section>
+  </footer>
 
-<!-- Bootstrap JS -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
 
-<!-- JS propio -->
-<script src="js/main.js"></script>
+
+
+  <!-- jQuery (necesario para slick) -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+  <!-- Slick JS -->
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+
+
+  <!-- Aos animacion -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script></script>
+
+  <!-- JS propio -->
+  <script src="js/main.js"></script>
+
+
 </body>
+
 </html>

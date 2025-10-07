@@ -1,3 +1,48 @@
+$(document).ready(function(){
+  
+    $('.slider_proyectos').slick({
+  dots: true,
+  infinite: true,
+  arrows: true,
+  speed: 300,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed:3000,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: false
+      }
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+ 
+  ]
+});
+
+
+
+AOS.init();
+  
+});
+
 // Cambiar color de navbar al hacer scroll
 documents.addEventListener("scroll", function () {
   const navbar = document.querySelector(".navbar");
@@ -18,25 +63,10 @@ navLinks.forEach((link) => {
   });
 });
 
-// Generar estrellas dinámicamente según el nivel
-document.querySelectorAll(".stars").forEach((starContainer) => {
-  const level = parseInt(starContainer.getAttribute("data-level"));
-  for (let i = 1; i <= 5; i++) {
-    const star = document.createElement("i");
-    star.classList.add("bi", "bi-star-fill");
-    if (i <= level) star.classList.add("active");
-    starContainer.appendChild(star);
-  }
-});
 
-// Efecto de halo en el proyecto activo del carrusel
-const carousel = document.getElementById("carouselProyectos");
 
-carousel.addEventListener("slide.bs.carousel", (event) => {
-  const cards = document.querySelectorAll(".proyecto-card");
-  cards.forEach((card) => card.classList.remove("active-card"));
 
-  const activeItem = carousel.querySelectorAll(".carousel-item")[event.to];
-  const activeCard = activeItem.querySelector(".proyecto-card");
-  if (activeCard) activeCard.classList.add("active-card");
-});
+
+
+
+

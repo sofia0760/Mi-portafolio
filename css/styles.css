@@ -9,13 +9,14 @@ body {
     background-color: #1e1e1e;
     color: var(--light-text);
     font-family: "Poppins", Arial, sans-serif;
-    padding-top: 80px; /* para no tapar el contenido por el navbar */
+    padding-top: 80px;
+    /* para no tapar el contenido por el navbar */
 }
 
 /* NAVBAR */
 .navbar {
     transition: background-color 0.4s ease, box-shadow 0.4s ease;
-    background-color: transparent !important;
+    background-color:#000000;
 }
 
 .navbar.scrolled {
@@ -77,11 +78,11 @@ body {
 /* SECCIONES */
 section {
     padding: 80px 0;
-    border-bottom: 1px solid #333;
+    border-bottom: 1px solid #8000ff;
 }
 
 .info-box {
-    border: 2px solid #444;
+    border: 2px solid #000000;
     border-radius: 10px;
 }
 
@@ -98,6 +99,9 @@ section {
 .habilidades-section {
     background-color: #1e1e1e;
     padding: 80px 0;
+}
+#perfil{
+    background:rgb(0, 0, 0);
 }
 
 .custom-card {
@@ -146,77 +150,142 @@ section {
     font-weight: bold;
 }
 
-/* ===========================
-   PROYECTOS SECTION
-=========================== */
-.proyectos-section {
-    background-color: #1e1e1e;
-    padding: 80px 0;
+/* ====== SECCIÓN PROYECTOS -------------------------------------------------------------------------------------------------------------------------------------------====== */
+#proyectos {
+    background-color: #0a0a0a;
+    /* Fondo oscuro elegante */
+    padding: 60px 100px;
+    text-align: center;
+    color: #fff;
 }
 
-.proyecto-card {
-    background-color: #000;
-    color: #fff;
-    border: 1px solid #333;
-    border-radius: 15px;
+#proyectos h2 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 60px;
+    background: linear-gradient(90deg, #7c0de5,#8000ff,#403d43,#83818645);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* ====== CONTENEDOR DEL SLIDER ====== */
+.slider-proyectos {
+    display: flex;
+    gap: 40px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 20px 0;
+}
+
+
+
+/* ====== TARJETAS ====== */
+.card-proyectos {
+    background-color: #111;
+    border-radius: 20px;
+    min-width: 300px;
+    max-width: 320px;
+    display: flex;
+    min-height: 390px;
+    height: auto;
+    transition: transform 0.3s ease, box shadow 0.3s ease;
+    margin: 20px 30px;
+    box-shadow: 0 0 20px rgba(168, 85, 247, 0.2);
+    transition: all 0.3s ease;
     overflow: hidden;
-    transition: all 0.4s ease;
+    margin-left: 30px;
+    padding: 20px 0;
+    
 }
 
-.proyecto-card img {
-    height: 200px;
+.card-proyectos:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 30px #8000ff(141, 3, 188, 0.4);
+
+}
+
+/* ====== IMAGEN ====== */
+.card-proyectos .cont-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 140px;
+    
+ 
+}
+
+.card-proyectos img {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
+    transition: transform 0.4s ease;
 }
 
-.proyecto-card:hover {
-    transform: scale(1.03);
-    box-shadow: 0 0 20px rgba(192, 132, 252, 0.6);
+.card-proyectos:hover img {
+    transform: scale(1.1);
 }
 
-.proyecto-card .card-body {
-    background-color: #000;
+/* ====== INFORMACIÓN ====== */
+.card-proyectos .cont-info {
+    padding: 20px;
 }
 
-.proyecto-card .card-title {
-    color: #fff;
+.card-proyectos .card-title {
+    font-size: 1.3rem;
     font-weight: 600;
+    color: #fff;
+    margin-bottom: 10px;
+    background: linear-gradient(90deg, #a855f7,#8000ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-.proyecto-card .card-text {
-    font-size: 0.9rem;
+.card-proyectos .card-text {
+    font-size: 0.95rem;
     color: #ccc;
+    margin-bottom: 15px;
+    line-height: 1.5;
 }
 
+/* ====== BOTÓN ====== */
 .ver-mas {
-    color: #c084fc;
+    display: inline-block;
+    background: linear-gradient(90deg, #a855f7, #000000);
+    color: #fff;
     text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s;
+    padding: 10px 18px;
+    border-radius: 25px;
+    font-weight: 600;
+    transition: all 0.3s ease;
 }
 
 .ver-mas:hover {
-    color: #9b5de5;
+    background: linear-gradient(90deg, #8000ff,#8000ff);
+    transform: scale(1.05);
+    color: #fff;
 }
 
-.carousel-indicators [data-bs-target] {
-    background-color: #c084fc;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
+/* da estilos a los botones que estan debajo de las card, aplica para todos los carruseles */
+.slick-prev:before,
+.slick-next:before {
+    font-size: 35px;
+    color: var(--third-color);
+    opacity: 1.75;
 }
 
-.carousel-indicators {
-    bottom: -40px;
+/* da estilos cuando se activa el boton abajo de las card */
+.slick-dots li.slick-active button:before {
+    color: white;
+    font-size: 15px;
+    text-shadow: 0 0 10px #bd8ced, 0 0 10px #bd8ced, 0 0 10px #bd8ced;
 }
 
-/* Título */
-.proyectos-section h2 {
-    font-weight: bold;
+.slick-dots li button:before {
+    color: white;
 }
 
-.active-card {
-    box-shadow: 0 0 25px rgba(192, 132, 252, 0.8);
-}
 
 /* ===========================
    ESTUDIOS SECTION
@@ -277,4 +346,340 @@ section {
 /* Título */
 .estudios-section h2 {
     font-weight: bold;
+    color: #b175d3;
+    /* tono morado pastel */
+
+}
+#experiencia{
+    background: rgb(0, 0, 0);
+}
+
+.hobby-icon {
+    font-size: 90px;
+    color: #b175d3;
+    /* tono morado pastel */
+    margin-bottom: 15px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.hobby-icon:hover {
+    transform: scale(1.2);
+    color: #dba3ff;
+}
+
+.card {
+    background-color: #1e1e1e;
+    color: white;
+    border-radius: 20px;
+    max-width: 400px;
+}
+
+/* ========================== */
+/* FOOTER MEJORADO */
+/* ========================== */
+.footer-section {
+    background: linear-gradient(180deg, #000000 0%, #1a0033 100%);
+    padding: 60px 0 30px;
+    border-top: 3px solid var(--primary-color);
+    position: relative;
+    overflow: hidden;
+}
+
+.footer-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, #8000ff, transparent);
+    box-shadow: 0 0 20px rgba(128, 0, 255, 0.5);
+}
+
+/* Títulos del Footer */
+.footer-section h4,
+.footer-section h5 {
+    font-weight: 700;
+    margin-bottom: 20px;
+    font-size: 1.3rem;
+}
+
+/* Texto del Footer */
+.footer-text {
+    color: #ccc;
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 10px;
+}
+
+.footer-text i {
+    color: var(--primary-color);
+    font-size: 1.1rem;
+}
+
+/* Enlaces Rápidos */
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: 12px;
+}
+
+.footer-links a {
+    color: #ccc;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: inline-block;
+    font-size: 1rem;
+    position: relative;
+    padding-left: 20px;
+}
+
+.footer-links a::before {
+    content: '▸';
+    position: absolute;
+    left: 0;
+    color: var(--primary-color);
+    transition: all 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: var(--primary-color);
+    padding-left: 25px;
+    font-weight: 600;
+}
+
+.footer-links a:hover::before {
+    left: 5px;
+    animation: bounce 0.6s ease infinite;
+}
+
+/* Animación para la flecha */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(5px);
+    }
+}
+
+/* Contenedor de Redes Sociales */
+.social-links {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+/* Iconos Sociales Mejorados */
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 55px;
+    height: 55px;
+    background: linear-gradient(135deg, rgba(128, 0, 255, 0.1), rgba(192, 132, 252, 0.1));
+    border: 2px solid var(--primary-color);
+    border-radius: 50%;
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Efecto de fondo animado */
+.social-icon::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: var(--primary-color);
+    transform: translate(-50%, -50%);
+    transition: width 0.4s ease, height 0.4s ease;
+    z-index: 0;
+}
+
+.social-icon i {
+    position: relative;
+    z-index: 1;
+    transition: all 0.3s ease;
+}
+
+/* Hover Effects */
+.social-icon:hover {
+    transform: translateY(-8px) scale(1.1);
+    box-shadow: 0 8px 25px rgba(128, 0, 255, 0.6);
+    border-color: transparent;
+}
+
+.social-icon:hover::before {
+    width: 100%;
+    height: 100%;
+}
+
+.social-icon:hover i {
+    color: white;
+    transform: scale(1.1);
+}
+
+/* Estilos específicos por red social */
+.social-icon:nth-child(1):hover {
+    box-shadow: 0 8px 25px rgba(0, 119, 181, 0.6); /* LinkedIn */
+}
+
+.social-icon:nth-child(2):hover {
+    box-shadow: 0 8px 25px rgba(36, 41, 46, 0.6); /* GitHub */
+}
+
+.social-icon:nth-child(3):hover {
+    box-shadow: 0 8px 25px rgba(225, 48, 108, 0.6); /* Instagram */
+}
+
+.social-icon:nth-child(4):hover {
+    box-shadow: 0 8px 25px rgba(29, 161, 242, 0.6); /* Twitter */
+}
+
+.social-icon:nth-child(5):hover {
+    box-shadow: 0 8px 25px rgba(234, 67, 53, 0.6); /* Email */
+}
+
+/* Copyright */
+.footer-copyright {
+    color: #888;
+    font-size: 0.95rem;
+    margin-top: 10px;
+    letter-spacing: 0.5px;
+}
+
+.border-top {
+    border-top: 1px solid rgba(128, 0, 255, 0.3) !important;
+}
+
+/* ========================== */
+/* RESPONSIVE FOOTER */
+/* ========================== */
+
+/* Tablets */
+@media (max-width: 991px) {
+    .footer-section {
+        padding: 50px 0 25px;
+    }
+    
+    .social-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 1.3rem;
+    }
+}
+
+/* Smartphones */
+@media (max-width: 767px) {
+    .footer-section {
+        text-align: center;
+        padding: 40px 0 20px;
+    }
+    
+    .footer-links {
+        text-align: center;
+    }
+    
+    .footer-links a {
+        padding-left: 20px;
+    }
+    
+    .footer-links a::before {
+        left: 0;
+    }
+    
+    .social-links {
+        justify-content: center;
+        gap: 15px;
+    }
+    
+    .social-icon {
+        width: 48px;
+        height: 48px;
+        font-size: 1.2rem;
+    }
+    
+    .footer-section h4,
+    .footer-section h5 {
+        font-size: 1.2rem;
+    }
+    
+    .footer-text {
+        font-size: 0.95rem;
+    }
+}
+
+/* Smartphones pequeños */
+@media (max-width: 575px) {
+    .footer-section {
+        padding: 35px 15px 20px;
+    }
+    
+    .social-icon {
+        width: 45px;
+        height: 45px;
+        font-size: 1.1rem;
+    }
+    
+    .social-links {
+        gap: 12px;
+    }
+    
+    .footer-copyright {
+        font-size: 0.85rem;
+    }
+}
+
+/* Efecto de pulso para iconos */
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(128, 0, 255, 0.7);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(128, 0, 255, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(128, 0, 255, 0);
+    }
+}
+
+.social-icon:active {
+    animation: pulse 0.6s ease;
+}
+
+
+
+
+/* ========================== */
+/* RESPONSIVE */
+/* ========================== */
+
+@media (max-width: 768px) {
+    .proyecto-card img {
+        height: 200px;
+    }
+
+    .proyecto-card .card-body {
+        padding: 20px 15px;
+    }
+
+    .proyecto-card .card-title {
+        font-size: 1.1rem;
+    }
+
+    .proyecto-card .card-text {
+        font-size: 0.9rem;
+    }
 }
